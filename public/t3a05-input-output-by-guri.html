@@ -1,4 +1,4 @@
-Version 0.0.0.3
+Version 0.0.0.4
 
 <h2 align=center>t3a05-Input Output by Guri.hltm</h2>
 
@@ -25,8 +25,6 @@ myIn01 + ' square = ' + myAnswer
 
 <div id="myDiv01">...</div>
 
-  
-  <html>
 <body>
 
 <p id="demo" onclick="myFunction()">Click here.</p>
@@ -38,4 +36,21 @@ function myFunction() {
 </script>
 
 </body>
-</html> 
+  
+<body>
+
+
+<button onclick="myFunction()" id="myBtn">Hello</button>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myBtn").innerText;
+  document.getElementById("demo").innerHTML = x;  
+}
+</script>
+
+</body>
+
