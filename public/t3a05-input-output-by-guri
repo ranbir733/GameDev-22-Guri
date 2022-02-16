@@ -1,0 +1,26 @@
+Version 0.0.0.1
+
+<h2 align=center>t3a05-Input Output by Guri.hltm</h2>
+
+<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference
+to input output Javascript innerHTML value by Guri</a>
+
+<h4> Example input output code</h4>
+<pre>
+let myIn01 = document.getElementById('myNum01').value
+document.getElementById('myDiv01').innerHTML = myIn01 + ' square = ' +
+myIn01*myIn01
+</pre>
+
+<h4> Example working code</h4>
+
+<input id="myNum01" type=number value="4" ><br>
+
+<inout type = button value="myEvent squares" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum01').value)
+let myAnswer = myIn01 * myIn01
+document.getElementbyId('myDiv01').innerHtml =
+myIn01 + ' square = ' + myAnswer
+}"><br>
+
+<div id="myDiv01">...</div>
