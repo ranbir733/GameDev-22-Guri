@@ -1,3 +1,4 @@
+Versiom 0.0.0.2
 <h2 align=center>t3a06-Variables-by-Guri.html</h2>
 
 <a href="https://www.w3schools.com/js/js_variables.asp">Javascript Variables</a><br><br>
@@ -20,6 +21,12 @@ document.getElementById('myDiv01').innerHTML = myIn01
 
 <input id="myText01" type=text value="The Dog" >
 <input id="myText02" type=text value="the Cat" > <br>
+
+<input type=button value="Show Variable" onclick="{
+                                                  let myIn01 = document.getElementById('myText01').value
+                                                  document.getElementById('myDiv01').innerHTML = myIn01
+                                                 
+                                                  }"><br>
 
 <input type=button value="Using no variable" onclick="{
                                                       document.getElementById('myDiv01').innerHTML = document.getElementById('myText02').value
