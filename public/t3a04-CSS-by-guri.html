@@ -3,7 +3,7 @@ h2 {
   border: 3px solid black;
 }
 </style>
-Version 0.0.18</br>
+Version 0.0.19</br>
 <h1><h2 align=center>T3A04 CSS by Guri<h1></h2>
 
 Reference Link
@@ -32,9 +32,13 @@ I do CSS inside the tag. It overpowers all other methods<br>
     document.getElementById('myB1').style.backgroundColor = 'yellow'
 }"><br><br>
 
-<textarea style="position:relative; left:0; top:0; width:200; height:50; ">
+<textarea id="mytext" style="position:relative; left:0; top:0; width:200; height:50; ">
   Advanced: see if you can move this textarea
 </textarea><br>
+  
+  <input type=button value="Move" onclick="{
+document.getElementById('mytext').style.left = '400px'
+}">
 
 <html>
 <head>
