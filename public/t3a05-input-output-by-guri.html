@@ -1,4 +1,4 @@
-<p style="color:limegreen;"> Version 0.0.0.13
+<p style="color:limegreen;"> Version 0.0.0.14
 
 <h2 align=center style="color:limegreen;">t3a05-Input Output by Guri.hltm</h2>
 
@@ -71,10 +71,40 @@ function myFunction2() {
 <head>
 <style>
 body {
-  background-image: url("https://mlb585rv92pb.i.optimole.com/Im8n21k-9NDjWP76/w:1024/h:676/q:auto/https://gameerror.com/wp-content/uploads/2021/07/witch_queen_1.jpg");
+  background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
 }
 </style>
 </head>
 <body>
+
+<style>
+#myDIV {
+  background-color: cyan;
+  padding: 16px;
+}
+</style>
+
+
+<div id="myDIV">Hover over to get number
+  <p>Click to freeze number</p>
+  <button onclick="removeHandler()">Freeze</button>
+</div>
+<p id= "good"</p>
+
+<script>
+const myDiv = document.getElementById("myDIV");
+myDiv.addEventListener("mousemove", myFunction);
+
+function removeHandler() {
+  myDiv.removeEventListener("mousemove", myFunction);
+}
+function myFunction() {
+ document.getElementById("good").innerHTML = Math.random();
+}
+</script>
+
+
+
+
