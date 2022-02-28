@@ -1,8 +1,8 @@
-Version 0.0.1
+Version 0.0.2
 
 <h2 align=center>t3a07-decision-by-Guri.html</h2>
 
-<a href="https://www.w3school.com/js/js_if_else.asp">Good reference to decisions if ... else statments
+<a href="https://www.w3schools.com/js/js_if_else.asp">Good reference to decisions if ... else statments
   Javascript innerHTML value by Guri</a><br>
 Note: ! = Not,  && = AND,  || = OR
 
@@ -24,6 +24,7 @@ let myGreeting = 'Good day';
                                                                             docuemnt.getElementById('myDiv01').innerHtml = myIn01 + ' is greater than 3'
                                                                             }
 }">
+
 <input type=button value="if...else" onclick="{
                                               let myIn01 = parseFloat(docuemnt.getElementById('myNum01').value)
                                               if (myIn01 >= 3){
@@ -35,7 +36,7 @@ let myGreeting = 'Good day';
 <input type=button value="Complex if" onclick="{
                                                let myIn01 = parseFloat(document.getElementById('myNum01').value)
                                                if ((myIn01 != 3 || myIn01 > -3)  && myIn01 <=100 ){
-                                               docuemtn.getElemntById('myDiv01').innerHTML = myIn01 + ' is complex'
+                                               document.getElemntById('myDiv01').innerHTML = myIn01 + ' is complex'
                                                } else {
                                                document.getElementById('myDiv01').innerHTML = myIn01 + ' is not complex'}
 }">
