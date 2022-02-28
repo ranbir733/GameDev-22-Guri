@@ -1,4 +1,4 @@
-Version 0.0.2
+Version 0.0.3
 
 <h2 align=center>t3a07-decision-by-Guri.html</h2>
 
@@ -26,7 +26,7 @@ let myGreeting = 'Good day';
 }">
 
 <input type=button value="if...else" onclick="{
-                                              let myIn01 = parseFloat(docuemnt.getElementById('myNum01').value)
+                                              let myIn01 = parseFloat(document.getElementById('myNum01').value)
                                               if (myIn01 >= 3){
                                               document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
                                               } else {
@@ -36,7 +36,7 @@ let myGreeting = 'Good day';
 <input type=button value="Complex if" onclick="{
                                                let myIn01 = parseFloat(document.getElementById('myNum01').value)
                                                if ((myIn01 != 3 || myIn01 > -3)  && myIn01 <=100 ){
-                                               document.getElemntById('myDiv01').innerHTML = myIn01 + ' is complex'
+                                               document.getElementById('myDiv01').innerHTML = myIn01 + ' is complex'
                                                } else {
                                                document.getElementById('myDiv01').innerHTML = myIn01 + ' is not complex'}
 }">
