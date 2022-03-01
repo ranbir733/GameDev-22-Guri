@@ -1,4 +1,4 @@
-Version 0.0.6
+Version 0.0.7
 
 <h2 align=center>t3a07-decision-by-Guri.html</h2>
 
@@ -47,11 +47,18 @@ let myGreeting = 'Good day';
 <br>
 <br>
 
-<p id="demo">Good Evening!</p>
+<p id="demo"></p>
 
 <script>
-if (new Date().getHours() < 12) {
-  document.getElementById("demo").innerHTML = "Good day!";
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 12) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
 }
+
+document.getElementById("demo").innerHTML = greeting;
 </script>
 
