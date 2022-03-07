@@ -1,4 +1,4 @@
-Version 0.0.0.4
+Version 0.0.0.3
 
 <h2 align=center>t3a11-arrays-by-Guri.html</h2>
 
@@ -13,11 +13,12 @@ myArray[0] = 'Fred'
 myArray[1] = 'Mary'
 
 </pre>
+
 <h4> Example working Array code</h4>
 
 Max Array Entry: <input type=text id="myText01" value="3"><br>
 
-<input type=button value="Example onClick="{
+<input type=button value="Example onClick" onClick="{
        let myMax = docuemtn.getElementById('myText01').value
        let myTemp = ''
        document.getElementById('myDiv01').innerHTML = ' '
@@ -39,3 +40,20 @@ docuemnt.getElementById('myDiv01').innerHTML = myTemp
 <br>
 
 You do at least 7 other arrays for 8 out of 9:<br>
+
+<body>
+
+<p>The brands sorted using array alphabetically:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const brands = ["Transformers", "Lego", "Pokemon", "Marvel"];
+document.getElementById("demo1").innerHTML = brands;
+
+brands.sort();
+document.getElementById("demo2").innerHTML = brands;
+</script>
+
+</body>
