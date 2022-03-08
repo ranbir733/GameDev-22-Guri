@@ -1,4 +1,4 @@
-Version 0.0.0.8
+Version 0.0.0.9
 
 <h2 align=center>t3a11-arrays-by-Guri.html</h2>
 
@@ -57,7 +57,21 @@ document.getElementById("demo2").innerHTML = brands;
 
 </body>
 
+<body>
 
+The array will substract 1000,50, and 400 starting from the right
+<p id="demo3"></p>
+
+<script>
+const numbers = [1000, 50, 400];
+document.getElementById("demo3").innerHTML = numbers.reduceRight(myFunc);
+
+function myFunc(total, num) {
+  return total - num;
+}
+</script>
+
+</body>
 
 
 <head>
