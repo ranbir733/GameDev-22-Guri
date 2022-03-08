@@ -1,4 +1,4 @@
-Version 0.0.0.9
+Version 0.0.0.10
 
 <h2 align=center>t3a11-arrays-by-Guri.html</h2>
 
@@ -73,6 +73,31 @@ function myFunc(total, num) {
 
 </body>
 
+<br>
+
+
+<body>
+
+<p>All number that are greater than 20 are shown:</p>
+
+
+<p id="demo"></p>
+
+<script>
+const ages = [80, 02, 24, 90, 19, 44, 12, 70, 9];
+
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 20;
+}
+</script>
+
+</body>
+
+<p>Numbers used for code are 80,2,24,90,19,44,12,70, and 9.</p>
+
+<br>
 
 <head>
 <style>
