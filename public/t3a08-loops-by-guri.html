@@ -1,4 +1,4 @@
-Version 0.0.2
+Version 0.0.3
 
 <h2 align=center>t3a08-loops-by-Guri.hmtl</h2>
 
@@ -26,9 +26,30 @@ Max loops: <input id="myNum01" type=number value="5" ><br>
                                                                   my temp += ' cool '
                                                                   }
                                                                   
-                                                                  myTemp += 'Loop numebr: ' + myLoop + '<br>'
+                                                                  myTemp += 'Loop numeber: ' + myLoop + '<br>'
                                                                   }
                                                                   document.getElementById('myDiv01').innerHTML = myTemp
                                                                   }">
 
 <div id="myDiv01"><font color=red>...</font></div>
+
+<body>
+
+<p>Looping 10 times</p>
+
+<p id="loop"></p>
+
+<script>
+let text = "";
+let i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("loop").innerHTML = text;
+</script>
+
+</body>
+
+
+
