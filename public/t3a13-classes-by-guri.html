@@ -1,4 +1,4 @@
-Version 0.0.4
+Version 0.0.5
 <h2 align=cneter>t3a13-Classes-by-Guri.html</h2>
 
 <a href="https://www.w3schools.com/js/js_classes.asp">Good reference to Javascript Classes</a><br>
@@ -32,11 +32,29 @@ How many years old?: <input type=text id="myText01" value="5"><br>
        document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
     }
  }  // end class myAnimal
-   myDog = new myAnimal('Snickers', 5)
-   myDog = new myAnimal('Dogo', 99)
-   myDog = new myAnimal('Dogorita', 97)
+   myDog = new myAnimal('Dogo', 9)
    myDog.myShow()  
 
 }">
 
 <div id="myDiv01">...</div>
+
+<br><br><br>
+
+<body>
+
+<button onclick="myFunction()">Click to remove bold bread</button>
+
+<h2 class="bread">Bread</h2>
+<p>Food made of flour, water, and yeast or another leavening agent, mixed together and baked.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("Bread");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+</body>
