@@ -1,4 +1,4 @@
-Version 0.0.6
+Version 0.0.7
 <h2 align=cneter>t3a13-Classes-by-Guri.html</h2>
 
 <a href="https://www.w3schools.com/js/js_classes.asp">Good reference to Javascript Classes</a><br>
@@ -69,3 +69,33 @@ body {
 }
 </style>
 </head>
+
+<br><br><br>
+
+<body>
+
+My toy was made in 2012 so...
+
+<p id="demo"></p>
+
+<script>
+class Toy {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age(x) {
+    return x - this.year;
+  }
+}
+
+let date = new Date();
+let year = date.getFullYear();
+
+let myToy = new Toy("Ford", 2012);
+document.getElementById("demo").innerHTML=
+"My toy is " + myToy.age(year) + " years old.";
+</script>
+
+</body>
+
