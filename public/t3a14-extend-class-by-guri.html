@@ -1,20 +1,19 @@
-
 <script>
 
  class myAnimal {
-    constructor(passName, passAge) {
+    constructor(passName, passAge, passMood) {
        this.myName = passName;
        this.myAge = passAge;
        this.myMood = passMood;
     }
     myShow(){    
-       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName+ ' 
+       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You seem '+ this.myMood + '. But they are '+ this.myAge + ' years old<br>'
     }
  }  // end class myAnimal
 
 </script>
 
-Version 0.0.1
+Version 0.0.5
 <h2 align=center>t3a14-extend-class-by-guri.html</h2>
 
 Extending a pre-existing Class<br>
@@ -35,7 +34,7 @@ Extending a pre-existing Class<br>
 
 <input type=button value="Example Class Set and Show Class Animal" onClick="{
 
-  myDog = new myAnimal('Snickers', 5)
+  myDog = new myAnimal('Snickers', 2, 'angry')
   myDog.myShow()  
 
 }">
@@ -47,11 +46,11 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
  class myCat extends myAnimal {                                                                      
      myShow(){
-       document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat<br>'
+       document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat. They are always '+ this.myMood + '. They are also '+ this.myAge + ' years old<br>'
     }                                                                   
 }    // end extended class myCat
                                                                                                                                                                                                                                                                                                                                     
-   myPet = new myCat('Fluffy', 14)
+   myPet = new myCat('Fluffy', 14, 'happy')
    myPet.myShow()  
 
 }">
