@@ -1,4 +1,4 @@
-Version 0.0.13
+Version 0.0.14
 <h2 align=center>t3a13-Classes-by-Guri.html</h2>
 
 <a href="https://www.w3schools.com/js/js_classes.asp">Good reference to Javascript Classes</a><br>
@@ -22,17 +22,19 @@ that work on the variables (called Methods)
 
 <h4> Example working Classes code</h4>
 Nothing useful: <input type=text id="myText01" value="No"><br>
-<input type=button value="Example Class Set and Show Class Animal" onClick="{
+<input type=button value="Animal type, years old, and hair color using classes" onClick="{
  class myAnimal {
-    constructor(passName, passAge) {
+    constructor(passName, passAge, passHair) {
        this.myName = passName;
        this.myAge = passAge;
+       this.myHair = passHair;
+       
     }
     myShow(){    
-       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old. The colour '+ this.myHair + ' is your hair colour<br>'
     }
  }  // end class myAnimal
-   myDog = new myAnimal('Dogo', 9)
+   myDog = new myAnimal('Dogo', 9, 'blue')
    myDog.myShow()  
 
 }">
@@ -101,4 +103,3 @@ document.getElementById("demo").innerHTML=
 </script>
 
 </body>
-
