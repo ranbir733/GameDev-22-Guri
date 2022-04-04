@@ -1,4 +1,4 @@
-<h1 style="color:white">Version 0.0.13</h1>
+<h1 style="color:white">Version 0.0.14</h1>
 
 <h1 align="center" style="color:white">t3a17-move-background-by-guri.html</h1>
 
@@ -12,15 +12,17 @@
 </script>
 
 <input id="myButton01" type=button value="background move left" onclick="{
+  clearInterval(myGlobal02)
+  clearInterval(myClock02)
   myTemp01 = '100px 0px'
   myGlobal01 -= 2
   myTemp01 =  myGlobal01 + 'px 0px'
   document.getElementById('myBody').style.backgroundPosition =myTemp01
-
 }">
 
 <input type=button value="Auto Background Left" onclick="{
-  clearInterval(myClock01)
+  clearInterval(myGlobal02)
+  clearInterval(myClock02)
   myClock01 = setInterval(function(){
      document.getElementById('myButton01').click() 
   }, 50)
@@ -29,25 +31,28 @@
 
    
 <input id="myButton02" type=button value="background move right" onclick="{
-                                                                          myTemp02 = '0px 100px'
-                                                                          myGlobal02 = 2
-                                                                          myTemp02 = myGlobal02 + '0px px'
-                                                                          document.getElementById('myBody').style.backgroundPosition =myTemp02
-                                                                          
-                                                                          }">
+  clearInterval(myGlobal01)
+  clearInterval(myClock01)
+  myTemp02 = '100px 0px'
+  myGlobal02 += 2
+  myTemp02 =  myGlobal02 + 'px 0px'
+  document.getElementById('myBody').style.backgroundPosition =myTemp02
+}">
    
-   <input type=button value="Auto Background Left" onclick="{
-                                                            clearInterval(myClock02)
-                                                            myClock02 = setInterval(function(){
-                                                            document.getElementById('myButton02').click()
-                                                            }, 50)
+   <input type=button value="Auto Background Right" onclick="{
+  clearInterval(myGlobal01)
+  clearInterval(myClock01)
+  myClock02 = setInterval(function(){
+                                             
+     document.getElementById('myButton02').click()
+  }, 50)
                                                             
-                                                            }">
+}">
    
    <input type=button value="Image Right" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
 }"><br><br>
-   
+
    <input type=button value="Image Left" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
 }"><br><br>
