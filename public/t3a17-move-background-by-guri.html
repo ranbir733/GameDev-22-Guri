@@ -1,18 +1,20 @@
-<h1 style="color:white">Version 0.0.11</h1>
+<h1 style="color:white">Version 0.0.12</h1>
 
 <h1 align="center" style="color:white">t3a17-move-background-by-guri.html</h1>
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://github.com/hpssjellis/high-school-javascript-game-dev-assignment-images/blob/main/public/myBackground01.jpg?raw=true">
 
 <script>
-   let myGlobalX = 0
-   let myClock
+   let myGlobal01 = 0
+   let myGlobal02 = 0
+   let myClock01
+   let myClock02
 </script>
 
 <input id="myButton01" type=button value="background move left" onclick="{
   myTemp01 = '100px 0px'
-  myGlobalX -= 2
-  myTemp01 =  myGlobalX + 'px 0px'
+  myGlobal01 -= 2
+  myTemp01 =  myGlobal01 + 'px 0px'
   document.getElementById('myBody').style.backgroundPosition =myTemp01
 
 }">
@@ -28,8 +30,8 @@
    
 <input id="myButton02" type=button value="background move right" onclick="{
                                                                           myTemp02 = '0px 100px'
-                                                                          myGlobalX = 2
-                                                                          myTemp02 = myGlobalX + '0px px'
+                                                                          myGlobal02 = 2
+                                                                          myTemp02 = myGlobal02 + '0px px'
                                                                           document.getElementById('myBody').style.backgroundPosition =myTemp02
                                                                           
                                                                           }">
