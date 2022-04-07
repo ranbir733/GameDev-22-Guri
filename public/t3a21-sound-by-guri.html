@@ -1,11 +1,16 @@
 <script> let mySound1 = new Audio('bensound-energy.mp3') </script>
  
-<h4 align=left>Version 0.0.4</h4>
+<h4 align=left>Version 0.0.5</h4>
 
 <h1 align=center>t3a21-Sounds-and-events-guri.html</h1>
 
 
-<input type=button value=sound onClick="{
+<input type=button value='Music' onClick="{
     mySound1.play()
 
 }">
+
+<input type=button value='Pause Music' onClick="{
+                                               mySound1.end()
+                                                
+                                                }">
