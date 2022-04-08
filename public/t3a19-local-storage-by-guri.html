@@ -1,5 +1,5 @@
-
-<h2>t3a19-local-storage-name-by-Guri. Instructions:</h2>
+<h4 align=left>Version 0.0.2</h4>
+<h2 align=center>t3a19-local-storage-name-by-Guri.html</h2>
 
 <body onload="{
    myStorage = localStorage.getItem('myStoredText')
@@ -24,5 +24,28 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
    document.getElementById('myText1').value = localStorage.getItem('myStoredText')
 }"> 
 
+<html>
+<head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  }
+}
+</script>
+</head>
+<body>
 
+<p><button onclick="clickCounter()" type="button">Click here!</button></p>
+<div id="result"></div>
+<p>Saves the times you click</p>
+
+
+</body>
+</html>
 
