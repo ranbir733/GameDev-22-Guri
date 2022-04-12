@@ -48,14 +48,14 @@ function myCheckHit(){
 
 </script>
 
-<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="myImage01.jpg">
-<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="myImage02.jpg">
+<img id="myImg01" style="position:absolute; width:80px; height:180px; top:500px; left:50px;"  src="https://www.pngkey.com/png/full/9-97125_minecraft-steve-head-png-picture-free-download-steve.png">
+<img id="myImg02" style="position:absolute; width:180px; height:240px; top:500px; left:250px;" src="https://thumbs.gfycat.com/AcademicInformalHookersealion-size_restricted.gif">
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
   let myTemp = '100px 0px'
   myClock = setInterval(function(){
-      myGlobalX -= 5
+      myGlobalX -= 2
       myTemp =  myGlobalX + 'px 0px'
       document.getElementById('myBody').style.backgroundPosition = myTemp
   }, 100)
