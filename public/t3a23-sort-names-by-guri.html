@@ -20,10 +20,8 @@
 }">
 
 <input type=button value="Sort" onclick="{
-  let myTemp = 0
-  for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
-     myCards[myLoop] = 0 // you do this stuff
-  }
+  myCards.sort()
+  document.getElementById('myDiv01').innerHTML = myCards
 }">
 
 <dir id="myDiv01"></div>
