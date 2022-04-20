@@ -1,4 +1,4 @@
-Version 0.0.15
+Version 0.0.16
 
 <h2 align=center>t3a08-loops-by-Guri.hmtl</h2>
 
@@ -33,23 +33,6 @@ Max loops: <input id="myNum01" type=number value="5" ><br>
 
 <div id="myDiv01"><font color=red>...</font></div>
 
-<body>
-
-<p>Looping 10 times</p>
-
-<p id="loop"></p>
-
-<script>
-let text = "";
-let i = 0;
-while (i < 10) {
-  text += "<br>The number is " + i;
-  i++;
-}
-document.getElementById("loop").innerHTML = text;
-</script>
-
-</body>
 
 <head>
 <style>
@@ -64,26 +47,20 @@ body {
 
 <body>
 
-<h4>Loops list 2 brands from BMW, Volvo, Saab, Ford </h4>
-
-<p id="demo5"></p>
+<p id="demo01"></p>
 
 <script>
-const cars = ["BMW", "Volvo", "Saab", "Ford"];
-let i = 2;
-let len = cars.length;
-let text = "";
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 
-for (; i < len; i++) {
+let text = "";
+for (let i = 0; i < cars.length; i++) {
   text += cars[i] + "<br>";
 }
 
-document.getElementById("demo5").innerHTML = text;
+document.getElementById("demo01").innerHTML = text;
 </script>
 
 </body>
-
-<br><br><br>
 
 <body>
 
@@ -94,12 +71,12 @@ document.getElementById("demo5").innerHTML = text;
 <script>
 const person = {fname:"Jeff", lname:"Bezos", age:58}; 
 
-let txt = "";
+let ply = "";
 for (let x in person) {
-  txt += person[x] + " ";
+  ply += person[x] + " ";
 }
 
-document.getElementById("demo6").innerHTML = txt;
+document.getElementById("demo6").innerHTML = ply;
 </script>
 
 </body>
@@ -110,18 +87,19 @@ document.getElementById("demo6").innerHTML = txt;
 
 <h4>Loops through numbers 45,4,9,16, and 25</h4>
 
-<p id="demo7"></p>
+<p id="demo04"></p>
 
 <script>
 const numbers = [45, 4, 9, 16, 25];
 
-let txt = "";
-numbers.forEach(myFunction);
-document.getElementById("demo7").innerHTML = txt;
+let leg = "";
+numbers.forEach(myFunction03);
+document.getElementById("demo04").innerHTML = leg;
 
-function myFunction(value, index, array) {
-  txt += value + "<br>"; 
+function myFunction03(value, index, array) {
+  leg += value + "<br>"; 
 }
 </script>
 
 </body>
+
