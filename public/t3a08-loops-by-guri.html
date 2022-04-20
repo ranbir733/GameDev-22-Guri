@@ -1,4 +1,4 @@
-Version 0.0.13
+Version 0.0.14
 
 <h2 align=center>t3a08-loops-by-Guri.hmtl</h2>
 
@@ -62,3 +62,66 @@ body {
 </style>
 </head>
 
+<body>
+
+<h4>Loops list 2 brands from BMW, Volvo, Saab, Ford </h4>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i = 2;
+let len = cars.length;
+let text = "";
+
+for (; i < len; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+
+<br><br><br>
+
+<body>
+
+<p>Loops through properties of an object:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {fname:"Jeff", lname:"Bezos", age:58}; 
+
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+
+<br><br><br>
+
+<body>
+
+<h4>Loops through numbers 45,4,9,16, and 25</h4>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
+</script>
+
+</body>
