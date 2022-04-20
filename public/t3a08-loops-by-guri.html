@@ -1,4 +1,4 @@
-Version 0.0.14
+Version 0.0.15
 
 <h2 align=center>t3a08-loops-by-Guri.hmtl</h2>
 
@@ -66,7 +66,7 @@ body {
 
 <h4>Loops list 2 brands from BMW, Volvo, Saab, Ford </h4>
 
-<p id="demo"></p>
+<p id="demo5"></p>
 
 <script>
 const cars = ["BMW", "Volvo", "Saab", "Ford"];
@@ -78,7 +78,7 @@ for (; i < len; i++) {
   text += cars[i] + "<br>";
 }
 
-document.getElementById("demo").innerHTML = text;
+document.getElementById("demo5").innerHTML = text;
 </script>
 
 </body>
@@ -89,7 +89,7 @@ document.getElementById("demo").innerHTML = text;
 
 <p>Loops through properties of an object:</p>
 
-<p id="demo"></p>
+<p id="demo6"></p>
 
 <script>
 const person = {fname:"Jeff", lname:"Bezos", age:58}; 
@@ -99,7 +99,7 @@ for (let x in person) {
   txt += person[x] + " ";
 }
 
-document.getElementById("demo").innerHTML = txt;
+document.getElementById("demo6").innerHTML = txt;
 </script>
 
 </body>
@@ -110,14 +110,14 @@ document.getElementById("demo").innerHTML = txt;
 
 <h4>Loops through numbers 45,4,9,16, and 25</h4>
 
-<p id="demo"></p>
+<p id="demo7"></p>
 
 <script>
 const numbers = [45, 4, 9, 16, 25];
 
 let txt = "";
 numbers.forEach(myFunction);
-document.getElementById("demo").innerHTML = txt;
+document.getElementById("demo7").innerHTML = txt;
 
 function myFunction(value, index, array) {
   txt += value + "<br>"; 
