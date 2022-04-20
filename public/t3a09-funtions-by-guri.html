@@ -9,7 +9,7 @@ function myExampleFuntion(){
   
 </script>
 
-Version 0.0.12
+Version 0.0.13
 
 <h2 align=center>t3a09-funtions-by-Guri.html</h2>
 
@@ -91,14 +91,17 @@ body {
 
 <body>
 
-<p>Converts 77 Fahrenheit to Celsius using function:</p>
-<p id="demo09"></p>
+<h4>Converts 77 Fahrenheit to Celsius</h4>
+
+<p id="demo"></p>
 
 <script>
-function toCelsius(f) {
-  return (5/9) * (f-32);
-}
-document.getElementById("demo09").innerHTML = toCelsius(77);
+document.getElementById("demo").innerHTML =
+"The temperature is " + toCelsius(77) + " Celsius";
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
 </script>
 
 </body>
