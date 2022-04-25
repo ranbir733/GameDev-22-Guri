@@ -1,12 +1,16 @@
-Version 0.0.1<br>
+
+Version 0.0.2<br>
 
 
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg"     onkeydown="{
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg"     
 
-   let myKey = event.key
-   //  let myKey = String.toLowerCase(event.key)
-   document.getElementById('myDiv01').innerHTML = myKey
-   if (myKey == 'd') {
+
+onkeydown="{
+
+   let myKey01 = event.key
+   //  let myKey01 = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey01
+   if (myKey01 == 'd') {
 
 
      // either uncomment
@@ -24,9 +28,71 @@ Version 0.0.1<br>
 
    // put your other keydowns here.
 
+let myKey02 = event.key
+   //  let myKey02 = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey02
+   if (myKey02 == 'w') {
 
+
+     // either uncomment
+     // clearInterval(myInterval)
+     // myInterval = setInterval(function(){
+     //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
+     //    myCheckHit()
+     // } ,20)
+
+     // or do the following
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 7
+      myCheckHit()
+   }
+
+
+ // put your other keydowns here.
+ 
+ let myKey03 = event.key
+   //  let myKey03 = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey03
+   if (myKey01 == 's') {
+
+
+     // either uncomment
+     // clearInterval(myInterval)
+     // myInterval = setInterval(function(){
+     //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
+     //    myCheckHit()
+     // } ,20)
+
+     // or do the following
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 7
+      myCheckHit()
+   }
+
+
+   // put your other keydowns here.
+
+ let myKey04 = event.key
+   //  let myKey04 = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey04
+   if (myKey01 == 'a') {
+
+
+     // either uncomment
+     // clearInterval(myInterval)
+     // myInterval = setInterval(function(){
+     //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+     //    myCheckHit()
+     // } ,20)
+
+     // or do the following
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 7
+      myCheckHit()
+   }
+
+
+   // put your other keydowns here.
 
 }">
+
 
 <h1 align=center>t4a01-game-template-with-wasd-by-Guri</h1>
 <br><br><br><br>
