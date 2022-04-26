@@ -1,5 +1,63 @@
 
-Version 0.0.2<br>
+
+<body>
+
+<script>
+let myTimeS = 0;
+let myTimeM = 0;
+//let myTimeH = 0;  //<--- For Hours only
+setInterval(myTimer, 1000);    //<---Disable or activate timer
+
+//let myTime = 0;
+function myTimer() {
+
+	myTimeS++;
+	//document.getElementById("demo").innerHTML = myTimeS;
+
+	if (myTimeS == 60) {
+
+		myTimeM++;
+		myTimeS = 0;
+	}
+
+	if (myTimeM == 60) {
+
+		myTimeH++;
+		myTimeM = 0;
+
+	}
+
+	if (myTimeM >= 2) {
+
+		location = 't2a13-keydown.html'  //Change this before creating next game
+
+		clearInterval(myTimer)
+
+	}
+
+
+document.getElementById("demo").innerHTML = //myTimeH + ':' + //<--- For Hours only
+myTimeM + ':' + myTimeS;
+
+
+		
+
+}
+
+
+
+
+
+
+
+</script>
+
+<div>Win in 2 mins</div>
+<div id='demo'>...</div>
+
+
+</body>
+Version 0.0.3<br>
 
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg"     
@@ -140,8 +198,8 @@ function myCheckHit(){
 
 </script>
 
-<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="myImage01.jpg">
-<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="myImage02.jpg">
+<img id="myImg01" style="position:absolute; width:100px; height:80px; top:600px; left:50px;"  src="myImage01.jpg">
+<img id="myImg02" style="position:absolute; width:100px; height:80px; top:600px; left:250px;" src="myImage02.jpg">
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
