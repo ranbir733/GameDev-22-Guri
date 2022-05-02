@@ -52,12 +52,26 @@ myTimeM + ':' + myTimeS;
 
 </script>
 
+ <script>
+//    let rotation = 0;
+//    function rotateImg() {
+//      rotation += 90; // add 90 degrees, you can change this as you want
+//      if (rotation === 360) { 
+//        // 360 means rotate back to 0
+//       rotation = 0;
+//      }
+//      document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
+//    }   
+//    
+  </script>
+  
+  
 <div>Win in 2 mins</div>
 <div id='demo'>...</div>
 
 
 </body>
-Version 0.0.15<br>
+Version 0.0.19<br>
 
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="image_and_sound/palani-selvam-IkghfzzIC2s-unsplash.jpg"     
@@ -81,6 +95,7 @@ onkeydown="{
      // or do the following
       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
       myCheckHit()
+      rotateImg()
    }
 
 
@@ -101,8 +116,9 @@ let myKey02 = event.key
 
      // or do the following
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 7
-      myCheckHit()
-   }
+		myCheckHit()
+}
+
 
 
  // put your other keydowns here.
@@ -123,6 +139,7 @@ let myKey02 = event.key
      // or do the following
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 7
       myCheckHit()
+      rotateImg()
    }
 
 
@@ -144,6 +161,7 @@ let myKey02 = event.key
      // or do the following
       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 7
       myCheckHit()
+      rotateImg()
    }
 
 
@@ -188,6 +206,15 @@ function myCheckHit(){
        location = 't4a02-lose-game-by-guri.html'  // go to your next level
    }
 
+   // far left bounce
+  if( parseInt(document.getElementById('myImg01').style.left) > window.innerWidth - document.getElementById('myImg01').width ){
+      myHorizontalSpeed *= -1
+   }
+  
+  // far right bounce
+  if( parseInt(document.getElementById('myImg01').style.left) < -10  ){
+      myHorizontalSpeed = myHorizontalSpeed * -1
+   }
 
    // more if statements here like the above
 
@@ -220,5 +247,4 @@ function myCheckHit(){
 
 
 <div id="myDiv01" style="color:yellow">..</div>
-
 
