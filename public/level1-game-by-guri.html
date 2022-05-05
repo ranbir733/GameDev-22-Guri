@@ -52,18 +52,57 @@ myTimeM + ':' + myTimeS;
 
 </script>
 
-// <script>
-//    let rotation = 0;
-//    function rotateImg() {
-//      rotation += 90; // add 90 degrees, you can change this as you want
-//      if (rotation === 360) { 
-//        // 360 means rotate back to 0
-//       rotation = 0;
-//      }
-//      document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
-//    }   
-//    
-//  </script>
+ <script>
+//	let rotation = 90;
+//	function rotateImg1() {
+//	rotation += 0;
+//	if (rotation === 90) {
+//	rotation = 90;
+//	}     
+//  document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
+	}   
+   
+  </script>
+
+
+ <script>
+//	let rotation = 0;
+//	function rotateImg2() {
+//	rotation += 0;
+//	if (rotation === 0) {
+//	rotation = 0;
+//	}
+//	document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
+//	}   
+   
+  </script>
+  
+  
+ <script>
+//	let rotation = 180;
+//	function rotateImg3() {
+//	rotation += 0;
+//	if (rotation === 180) { 
+//	rotation = 180;
+//	}
+//	document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
+//	}   
+   
+  </script>
+  
+  
+  <script>
+//	let rotation = 270;
+//	function rotateImg4() {
+//	rotation += 0;
+//	if (rotation === 270) { 
+//	rotation = 270
+//	}
+//	document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
+//	}   
+   
+  </script>
+  
   
   
 <div>Win in 2 mins</div>
@@ -71,7 +110,7 @@ myTimeM + ':' + myTimeS;
 
 
 </body>
-Version 0.0.30<br>
+Version 0.0.31<br>
 
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="image_and_sound/palani-selvam-IkghfzzIC2s-unsplash.jpg"     
@@ -95,7 +134,7 @@ onkeydown="{
      // or do the following
       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
       myCheckHit()
-      //rotateImg()
+      rotateImg1()
    }
 
 
@@ -117,6 +156,7 @@ let myKey02 = event.key
      // or do the following
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 7
 		myCheckHit()
+        rotateImg2()
 }
 
 
@@ -139,7 +179,7 @@ let myKey02 = event.key
      // or do the following
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 7
       myCheckHit()
-      //rotateImg()
+      rotateImg3()
    }
 
 
@@ -161,7 +201,7 @@ let myKey02 = event.key
      // or do the following
       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 7
       myCheckHit()
-      //rotateImg()
+      rotateImg4()
    }
 
 
