@@ -95,7 +95,9 @@ myTimeM + ':' + myTimeS;
 
 
 </body>
-Version 0.0.32<br>
+<h4 style="color:pink">Version 0.0.33</h4>
+	
+<br>
 
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="image_and_sound/palani-selvam-IkghfzzIC2s-unsplash.jpg"     
@@ -271,24 +273,6 @@ function myCheckHit(){
 <img id="myImg04" style="position:absolute; width:1599px; height:1px; top:756px; left:0px;" src="image_and_sound/border up,down.png">
 <img id="myImg05" style="position:absolute; width:1px; height:756px; top:0px; left:0px;" src="image_and_sound/border left,right.png">
 <img id="myImg06" style="position:absolute; width:1px; height:756px; top:0px; left:1599px;" src="image_and_sound/border left,right.png">
-
-<input type=button value="Auto Background Left" onclick="{
-  clearInterval(myClock)
-  let myTemp = '100px 0px'
-  myClock = setInterval(function(){
-      myGlobalX -= 5
-      myTemp =  myGlobalX + 'px 0px'
-      document.getElementById('myBody').style.backgroundPosition = myTemp
-  }, 100)
-    
-}">
-
-
-<input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()     // checks for all collisions
-}"><br><br>
-
 
 <div id="myDiv01" style="color:blue">..</div>
 
