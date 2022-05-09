@@ -95,7 +95,7 @@ myTimeM + ':' + myTimeS;
 
 
 </body>
-<h4 style="color:pink">Version 0.0.37</h4>
+<h4 style="color:pink">Version 0.0.38</h4>
 	
 <br>
 
@@ -254,7 +254,7 @@ function myCheckHit(){
     } 
 
 	// far left bounce
-  if( parseInt(document.getElementById('myImg02').style.left) > window.innerWidth - document.getElementById('myImg01').width ){
+  if( parseInt(document.getElementById('myImg02').style.left) > window.innerWidth - document.getElementById('myImg02').width ){
       myHorizontalSpeed *= -1
    }
   
@@ -263,7 +263,7 @@ function myCheckHit(){
       myHorizontalSpeed = myHorizontalSpeed * -1
    }
 	// far down bounce
- if( parseInt(document.getElementById('myImg02').style.top) > window.innerHeight - document.getElementById('myImg01').height ){
+ if( parseInt(document.getElementById('myImg02').style.top) > window.innerHeight - document.getElementById('myImg02').height ){
       myVeritcalSpeed *= -1
    }
   
