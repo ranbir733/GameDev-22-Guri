@@ -1,0 +1,9 @@
+<body id="myBody" onLoad="{
+ myTimer01 = setInterval(function(){
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + myHorizontalSpeed + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
+    myTimer02 = setInterval(function(){
+     document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + myVeritcalSpeed + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
