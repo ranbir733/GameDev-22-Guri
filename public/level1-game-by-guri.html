@@ -1,7 +1,15 @@
-
-
-<body>
-
+<body id="myBody" onLoad="{
+ myTimer01 = setInterval(function(){
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + myHorizontalSpeed + 'px'
+     //myCheckHit()     // checks for all collisions
+  }, 50)
+    myTimer02 = setInterval(function(){
+     document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + myVeritcalSpeed + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
+  
+}">
+  
 <script>
 let myTimeS = 0;
 let myTimeM = 0;
@@ -95,7 +103,7 @@ myTimeM + ':' + myTimeS;
 
 
 </body>
-<h4 style="color:pink">Version 0.0.38</h4>
+<h4 style="color:pink">Version 0.0.39</h4>
 	
 <br>
 
@@ -104,96 +112,71 @@ myTimeM + ':' + myTimeS;
 
 
 onkeydown="{
-
    let myKey01 = event.key
    //  let myKey01 = String.toLowerCase(event.key)
    document.getElementById('myDiv01').innerHTML = myKey01
    if (myKey01 == 'd') {
-
-
      // either uncomment
      // clearInterval(myInterval)
      // myInterval = setInterval(function(){
      //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
      //    myCheckHit()
      // } ,20)
-
      // or do the following
       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
       myCheckHit()
       rotateImg1()
    }
-
-
    // put your other keydowns here.
-
 let myKey02 = event.key
    //  let myKey02 = String.toLowerCase(event.key)
    document.getElementById('myDiv01').innerHTML = myKey02
    if (myKey02 == 'w') {
-
-
      // either uncomment
      // clearInterval(myInterval)
      // myInterval = setInterval(function(){
      //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
      //    myCheckHit()
      // } ,20)
-
      // or do the following
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 7
 		myCheckHit()
         rotateImg2()
 }
-
-
-
  // put your other keydowns here.
  
  let myKey03 = event.key
    //  let myKey03 = String.toLowerCase(event.key)
    document.getElementById('myDiv01').innerHTML = myKey03
    if (myKey01 == 's') {
-
-
      // either uncomment
      // clearInterval(myInterval)
      // myInterval = setInterval(function(){
      //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
      //    myCheckHit()
      // } ,20)
-
      // or do the following
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 7
       myCheckHit()
       rotateImg3()
    }
-
-
    // put your other keydowns here.
-
  let myKey04 = event.key
    //  let myKey04 = String.toLowerCase(event.key)
    document.getElementById('myDiv01').innerHTML = myKey04
    if (myKey01 == 'a') {
-
-
      // either uncomment
      // clearInterval(myInterval)
      // myInterval = setInterval(function(){
      //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
      //    myCheckHit()
      // } ,20)
-
      // or do the following
       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 7
       myCheckHit()
       rotateImg4()
    }
-
-
    // put your other keydowns here.
-
 }">
 
 
@@ -209,7 +192,7 @@ let myKey02 = event.key
    let myTimer01
    let myTimer02
    let myHorizontalSpeed = 10
-   let myVeritcalSpeed  = 6
+   let myVeritcalSpeed  = 10
 
    // global functions here
 function myHitOther(my1,my2){
@@ -268,7 +251,7 @@ function myCheckHit(){
    }
   
   // far up bounce
-  if( parseInt(document.getElementById('myImg02').style.top) < -6  ){
+  if( parseInt(document.getElementById('myImg02').style.top) < -10  ){
       myVeritcalSpeed = myVeritcalSpeed * -1
    }
 
