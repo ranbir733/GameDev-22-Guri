@@ -2,11 +2,11 @@
  myTimer01 = setInterval(function(){
      document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + myHorizontalSpeed + 'px'
      //myCheckHit()     // checks for all collisions
-  }, 18)
+  }, 5)
     myTimer02 = setInterval(function(){
      document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + myVeritcalSpeed + 'px'
      myCheckHit()     // checks for all collisions
-  }, 18)
+  }, 5)
   
 }">
   
@@ -103,7 +103,7 @@ myTimeM + ':' + myTimeS;
 
 
 </body>
-<h4 style="color:pink">Version 0.0.46</h4>
+<h4 style="color:pink">Version 0.0.44</h4>
 	
 <br>
 
@@ -123,7 +123,7 @@ onkeydown="{
      //    myCheckHit()
      // } ,20)
      // or do the following
-      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 15
       myCheckHit()
       rotateImg1()
    }
@@ -139,7 +139,7 @@ let myKey02 = event.key
      //    myCheckHit()
      // } ,20)
      // or do the following
-      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 15
 		myCheckHit()
         rotateImg2()
 }
@@ -156,7 +156,7 @@ let myKey02 = event.key
      //    myCheckHit()
      // } ,20)
      // or do the following
-      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 15
       myCheckHit()
       rotateImg3()
    }
@@ -172,15 +172,13 @@ let myKey02 = event.key
      //    myCheckHit()
      // } ,20)
      // or do the following
-      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 15
       myCheckHit()
       rotateImg4()
    }
    // put your other keydowns here.
 }">
 
-
-<h1 align=center>t4a01-game-template-with-wasd-by-Guri</h1>
 <br><br>
 
 <script>
@@ -191,8 +189,8 @@ let myKey02 = event.key
    let myInterval= 0
    let myTimer01
    let myTimer02
-   let myHorizontalSpeed = 5
-   let myVeritcalSpeed  = 3
+   let myHorizontalSpeed = 1
+   let myVeritcalSpeed  = 1
 
    // global functions here
 function myHitOther(my1,my2){
@@ -215,7 +213,6 @@ function myHitOther(my1,my2){
 
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
-       alert('you lose')  
        location = 't4a02-lose-game-by-guri.html'  // go to your next level
    }
 
@@ -232,7 +229,7 @@ function myCheckHit(){
     }
     
     if ( myHitOther('myImg01','myImg06') ){ 
-       document.getElementById('myImg01').style.left = '1500px' // go to your next level
+       document.getElementById('myImg01').style.left = '1480px' // go to your next level
     } 
 
 	// far left bounce image 2
@@ -241,7 +238,7 @@ function myCheckHit(){
    }
   
   // far right bounce image 2
-  if( parseInt(document.getElementById('myImg02').style.left) < -5  ){
+  if( parseInt(document.getElementById('myImg02').style.left) < -1  ){
       myHorizontalSpeed = myHorizontalSpeed * -1
    }
 	// far down bounce image 2
@@ -250,7 +247,7 @@ function myCheckHit(){
    }
   
   // far up bounce image 2
-  if( parseInt(document.getElementById('myImg02').style.top) < -3  ){
+  if( parseInt(document.getElementById('myImg02').style.top) < -1  ){
       myVeritcalSpeed = myVeritcalSpeed * -1
    }
    // more if statements here like the above
@@ -269,4 +266,4 @@ function myCheckHit(){
 <img id="myImg05" style="position:absolute; width:1px; height:756px; top:0px; left:0px;" src="image_and_sound/border left,right.png">
 <img id="myImg06" style="position:absolute; width:1px; height:756px; top:0px; left:1590px;" src="image_and_sound/border left,right.png">
 
-<h3><div id="myDiv01" style="color:pink"><b>..</b></div></h3>
+<h3><div id="myDiv01" style="color:rgb(252, 5, 239)"><b>..</b></div></h3>
