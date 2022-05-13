@@ -1,269 +1,269 @@
 <body id="myBody" onLoad="{
- myTimer01 = setInterval(function(){
-     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + myHorizontalSpeed + 'px'
-     //myCheckHit()     // checks for all collisions
-  }, 5)
-    myTimer02 = setInterval(function(){
-     document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + myVeritcalSpeed + 'px'
-     myCheckHit()     // checks for all collisions
-  }, 5)
+   myTimer01 = setInterval(function(){
+       document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + myHorizontalSpeed + 'px'
+       //myCheckHit()     // checks for all collisions
+    }, 2)
+      myTimer02 = setInterval(function(){
+       document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + myVeritcalSpeed + 'px'
+       myCheckHit()     // checks for all collisions
+    }, 2)
+    
+  }">
+    
+  <script>
+  let myTimeS = 0;
+  let myTimeM = 0;
+  //let myTimeH = 0;  //<--- For Hours only
+  setInterval(myTimer, 1000);    //<---Disable or activate timer
   
-}">
+  //let myTime = 0;
+  function myTimer() {
   
-<script>
-let myTimeS = 0;
-let myTimeM = 0;
-//let myTimeH = 0;  //<--- For Hours only
-setInterval(myTimer, 1000);    //<---Disable or activate timer
-
-//let myTime = 0;
-function myTimer() {
-
-	myTimeS++;
-	document.getElementById("demo").innerHTML = myTimeS;
-
-	if (myTimeS == 60) {
-
-		myTimeM++;
-		myTimeS = 0;
-	}
-
-	if (myTimeM == 60) {
-
-		myTimeH++;
-		myTimeM = 0;
-
-	}
-
-	if (myTimeM >= 2) {
-
-		location = 't4a03-win-game-by-guri.html'
-
-		clearInterval(myTimer)
-
-	}
-
-
-document.getElementById("demo").innerHTML = //myTimeH + ':' + //<--- For Hours only
-myTimeM + ':' + myTimeS;
-
-
-		
-
-}
-
-
-
-
-
-
-
-</script>
-
- <script>
-	let rotation = 0;
-	function rotateImg1() {
-	rotation += 0;
-	if (rotation <= 270) {
-	rotation = 90;
-	}     
-	document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
-	}   
-   
-	function rotateImg2() {
-	rotation += 0;
-	if (rotation <= 270) {
-	rotation = 0;
-	}
-	document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
-	}   
-   
-	function rotateImg3() {
-	rotation += 0;
-	if (rotation <= 270) { 
-	rotation = 180;
-	}
-	document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
-	}   
-   
-	function rotateImg4() {
-	rotation += 0;
-	if (rotation <= 270) { 
-	rotation = 270
-	}
-	document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
-	}   
-   
+     myTimeS++;
+     document.getElementById("demo").innerHTML = myTimeS;
+  
+     if (myTimeS == 60) {
+  
+        myTimeM++;
+        myTimeS = 0;
+     }
+  
+     if (myTimeM == 60) {
+  
+        myTimeH++;
+        myTimeM = 0;
+  
+     }
+  
+     if (myTimeM >= 2) {
+  
+        location = 't4a03-win-game-by-guri.html'
+  
+        clearInterval(myTimer)
+  
+     }
+  
+  
+  document.getElementById("demo").innerHTML = //myTimeH + ':' + //<--- For Hours only
+  myTimeM + ':' + myTimeS;
+  
+  
+        
+  
+  }
+  
+  
+  
+  
+  
+  
+  
   </script>
   
-  
-  
+   <script>
+     let rotation = 0;
+     function rotateImg1() {
+     rotation += 0;
+     if (rotation <= 270) {
+     rotation = 90;
+     }     
+     document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
+     }   
+     
+     function rotateImg2() {
+     rotation += 0;
+     if (rotation <= 270) {
+     rotation = 0;
+     }
+     document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
+     }   
+     
+     function rotateImg3() {
+     rotation += 0;
+     if (rotation <= 270) { 
+     rotation = 180;
+     }
+     document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
+     }   
+     
+     function rotateImg4() {
+     rotation += 0;
+     if (rotation <= 270) { 
+     rotation = 270
+     }
+     document.querySelector("#myImg01").style.transform = `rotate(${rotation}deg)`;
+     }   
+     
+    </script>
+    
+    
+    
 <div style="color:rgb(252, 5, 239)">Win in 2 mins</div>
 <div id='demo' style="color:rgb(252, 5, 239)">...</div>
-
-
-</body>
-<h4 style="color:rgb(252, 5, 239)">Version 0.0.55</h4>
-	
-<br>
-
-
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="image_and_sound/kai-pilger-Ef6iL87-vOA-unsplash.jpg"     
-
-
-onkeydown="{
-   let myKey01 = event.key
-   //  let myKey01 = String.toLowerCase(event.key)
-   document.getElementById('myDiv01').innerHTML = myKey01
-   if (myKey01 == 'd') {
-     // either uncomment
-     // clearInterval(myInterval)
-     // myInterval = setInterval(function(){
-     //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
-     //    myCheckHit()
-     // } ,20)
-     // or do the following
-      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 15
-      myCheckHit()
-      rotateImg1()
-   }
-   // put your other keydowns here.
-let myKey02 = event.key
-   //  let myKey02 = String.toLowerCase(event.key)
-   document.getElementById('myDiv01').innerHTML = myKey02
-   if (myKey02 == 'w') {
-     // either uncomment
-     // clearInterval(myInterval)
-     // myInterval = setInterval(function(){
-     //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
-     //    myCheckHit()
-     // } ,20)
-     // or do the following
-      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 15
-		myCheckHit()
-        rotateImg2()
-}
- // put your other keydowns here.
- 
- let myKey03 = event.key
-   //  let myKey03 = String.toLowerCase(event.key)
-   document.getElementById('myDiv01').innerHTML = myKey03
-   if (myKey01 == 's') {
-     // either uncomment
-     // clearInterval(myInterval)
-     // myInterval = setInterval(function(){
-     //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
-     //    myCheckHit()
-     // } ,20)
-     // or do the following
-      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 15
-      myCheckHit()
-      rotateImg3()
-   }
-   // put your other keydowns here.
- let myKey04 = event.key
-   //  let myKey04 = String.toLowerCase(event.key)
-   document.getElementById('myDiv01').innerHTML = myKey04
-   if (myKey01 == 'a') {
-     // either uncomment
-     // clearInterval(myInterval)
-     // myInterval = setInterval(function(){
-     //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
-     //    myCheckHit()
-     // } ,20)
-     // or do the following
-      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 15
-      myCheckHit()
-      rotateImg4()
-   }
-   // put your other keydowns here.
-}">
-
-<br><br>
-
-<script>
-
-   // global variables here
-   let myGlobalX = 0
-   let myClock
-   let myInterval= 0
-   let myTimer01
-   let myTimer02
-   let myHorizontalSpeed = 1
-   let myVeritcalSpeed  = 1
-
-   // global functions here
-function myHitOther(my1,my2){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left2   = parseInt(document.getElementById(my2).style.left)
-   right2  = left2 + parseInt(document.getElementById(my2).style.width)
-   top2    = parseInt(document.getElementById(my2).style.top)   
-   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
-   if ((right1  >=  left2  ) &&      	   
-       (bottom1 >=  top2   ) &&
-       (left1   <=  right2 ) &&
-       (top1    <=  bottom2) ){
-       return true
-   }
-}
-
-
-function myCheckHit(){
-   if ( myHitOther('myImg01','myImg02') ){
-       location = 't4a02-lose-game-by-guri.html'  // go to your next level
-   }
-
-	if ( myHitOther('myImg01','myImg03') ){ 
-       document.getElementById('myImg01').style.top = '2px' // go to your next level
-   }
-
-	if ( myHitOther('myImg01','myImg04') ){ 
-       document.getElementById('myImg01').style.top = '640px' // go to your next level
-   }
-    
-    if ( myHitOther('myImg01','myImg05') ){ 
-       document.getElementById('myImg01').style.left = '2px' // go to your next level
-    }
-    
-    if ( myHitOther('myImg01','myImg06') ){ 
-       document.getElementById('myImg01').style.left = '1510px' // go to your next level
-    } 
-
-	// far left bounce image 2
-  if( parseInt(document.getElementById('myImg02').style.left) > window.innerWidth - document.getElementById('myImg02').width ){
-      myHorizontalSpeed *= -1
-   }
   
-  // far right bounce image 2
-  if( parseInt(document.getElementById('myImg02').style.left) < -1  ){
-      myHorizontalSpeed = myHorizontalSpeed * -1
-   }
-	// far down bounce image 2
- if( parseInt(document.getElementById('myImg02').style.top) > window.innerHeight - document.getElementById('myImg02').height ){
-      myVeritcalSpeed *= -1
-   }
   
-  // far up bounce image 2
-  if( parseInt(document.getElementById('myImg02').style.top) < -1  ){
-      myVeritcalSpeed = myVeritcalSpeed * -1
-   }
-   // more if statements here like the above
+  </body>
+  <h4 style="color:rgb(252, 5, 239)">Version 0.0.56</h4>
+     
+  <br>
+  
+  
+  <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="image_and_sound/kai-pilger-Ef6iL87-vOA-unsplash.jpg"     
+  
+  
+  onkeydown="{
+     let myKey01 = event.key
+     //  let myKey01 = String.toLowerCase(event.key)
+     document.getElementById('myDiv01').innerHTML = myKey01
+     if (myKey01 == 'd') {
+       // either uncomment
+       // clearInterval(myInterval)
+       // myInterval = setInterval(function(){
+       //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+       //    myCheckHit()
+       // } ,20)
+       // or do the following
+        document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 18
+        myCheckHit()
+        rotateImg1()
+     }
+     // put your other keydowns here.
+  let myKey02 = event.key
+     //  let myKey02 = String.toLowerCase(event.key)
+     document.getElementById('myDiv01').innerHTML = myKey02
+     if (myKey02 == 'w') {
+       // either uncomment
+       // clearInterval(myInterval)
+       // myInterval = setInterval(function(){
+       //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
+       //    myCheckHit()
+       // } ,20)
+       // or do the following
+        document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 19
+        myCheckHit()
+          rotateImg2()
+  }
+   // put your other keydowns here.
+   
+   let myKey03 = event.key
+     //  let myKey03 = String.toLowerCase(event.key)
+     document.getElementById('myDiv01').innerHTML = myKey03
+     if (myKey01 == 's') {
+       // either uncomment
+       // clearInterval(myInterval)
+       // myInterval = setInterval(function(){
+       //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
+       //    myCheckHit()
+       // } ,20)
+       // or do the following
+        document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 15
+        myCheckHit()
+        rotateImg3()
+     }
+     // put your other keydowns here.
+   let myKey04 = event.key
+     //  let myKey04 = String.toLowerCase(event.key)
+     document.getElementById('myDiv01').innerHTML = myKey04
+     if (myKey01 == 'a') {
+       // either uncomment
+       // clearInterval(myInterval)
+       // myInterval = setInterval(function(){
+       //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+       //    myCheckHit()
+       // } ,20)
+       // or do the following
+        document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 15
+        myCheckHit()
+        rotateImg4()
+     }
+     // put your other keydowns here.
+  }">
+  
+  <br><br>
+  
+  <script>
+  
+     // global variables here
+     let myGlobalX = 0
+     let myClock
+     let myInterval= 0
+     let myTimer01
+     let myTimer02
+     let myHorizontalSpeed = 1
+     let myVeritcalSpeed  = 1
+  
+     // global functions here
+  function myHitOther(my1,my2){
+     left1   = parseInt(document.getElementById(my1).style.left)
+     right1  = left1 + parseInt(document.getElementById(my1).style.width)
+     top1    = parseInt(document.getElementById(my1).style.top)   
+     bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+     left2   = parseInt(document.getElementById(my2).style.left)
+     right2  = left2 + parseInt(document.getElementById(my2).style.width)
+     top2    = parseInt(document.getElementById(my2).style.top)   
+     bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+     if ((right1  >=  left2  ) &&      	   
+         (bottom1 >=  top2   ) &&
+         (left1   <=  right2 ) &&
+         (top1    <=  bottom2) ){
+         return true
+     }
+  }
+  
+  
+  function myCheckHit(){
+     if ( myHitOther('myImg01','myImg02') ){
+         location = 't4a02-lose-game-by-guri.html'  // go to your next level
+     }
+  
+     // far left bounce image 2
+    if( parseInt(document.getElementById('myImg02').style.left) > window.innerWidth - document.getElementById('myImg02').width ){
+        myHorizontalSpeed *= -1
+     }
+    
+    // far right bounce image 2
+    if( parseInt(document.getElementById('myImg02').style.left) < -1  ){
+        myHorizontalSpeed = myHorizontalSpeed * -1
+     }
+     // far down bounce image 2
+   if( parseInt(document.getElementById('myImg02').style.top) > window.innerHeight - document.getElementById('myImg02').height ){
+        myVeritcalSpeed *= -1
+     }
+    
+    // far up bounce image 2
+    if( parseInt(document.getElementById('myImg02').style.top) < -1  ){
+        myVeritcalSpeed = myVeritcalSpeed * -1
+     }
 
+       // Bordered right image 1
+    if( parseInt(document.getElementById('myImg01').style.left) > window.innerWidth - document.getElementById('myImg01').width ){
+      document.getElementById('myImg01').style.left = '1510px'
+     }
+    
+    // Bordered Left image 1
+    if( parseInt(document.getElementById('myImg01').style.left) < -1  ){
+      document.getElementById('myImg01').style.left = '2px'
+     }
+     // Down Bordered image 1
+   if( parseInt(document.getElementById('myImg01').style.top) > window.innerHeight - document.getElementById('myImg01').height ){
+      document.getElementById('myImg01').style.top = '650px'
+     }
+    
+    // Bordered Up image 1
+    if( parseInt(document.getElementById('myImg01').style.top) < -1  ){
+      document.getElementById('myImg01').style.top = '2px'
+     }
+     // more if statements here like the above
+  
+  
+  
+     }  // end of myCheckHit()
+  
+  
+  </script>
+  
+  <img id="myImg01" style="position:absolute; width:80px; height:100px; top:300px; left:25px;"  src="image_and_sound/spaceship done.gif">
+  <img id="myImg02" style="position:absolute; width:250px; height:250px; top:300px; left:250px;" src="image_and_sound/WshT.gif">
 
-
-}  // end of myCheckHit()
-
-
-</script>
-
-<img id="myImg01" style="position:absolute; width:80px; height:100px; top:300px; left:25px;"  src="image_and_sound/spaceship done.gif">
-<img id="myImg02" style="position:absolute; width:250px; height:250px; top:300px; left:250px;" src="image_and_sound/WshT.gif">
-<img id="myImg03" style="position:absolute; width:1599px; height:1px; top:2px; left:0px;" src="image_and_sound/border up,down.png">
-<img id="myImg04" style="position:absolute; width:1599px; height:1px; top:755px; left:0px;" src="image_and_sound/border up,down.png">
-<img id="myImg05" style="position:absolute; width:1px; height:756px; top:0px; left:0px;" src="image_and_sound/border left,right.png">
-<img id="myImg06" style="position:absolute; width:1px; height:756px; top:0px; left:1598px;" src="image_and_sound/border left,right.png">
-
-<h3><div id="myDiv01" style="color:rgb(252, 5, 239)"><b>..</b></div></h3>
+  
+  <h3><div id="myDiv01" style="color:rgb(252, 5, 239)"><b>..</b></div></h3>
