@@ -103,7 +103,7 @@
   
   
   </body>
-  <h4 style="color:rgb(252, 5, 239)">Version 0.0.56</h4>
+  <h4 style="color:rgb(252, 5, 239)">Version 0.0.57</h4>
      
   <br>
   
@@ -237,16 +237,16 @@
 
        // Bordered right image 1
     if( parseInt(document.getElementById('myImg01').style.left) > window.innerWidth - document.getElementById('myImg01').width ){
-      document.getElementById('myImg01').style.left = '1510px'
+      document.getElementById('myImg01').style.left = window.innerWidth - 90
      }
     
     // Bordered Left image 1
     if( parseInt(document.getElementById('myImg01').style.left) < -1  ){
-      document.getElementById('myImg01').style.left = '2px'
+      document.getElementById('myImg01').style.left = 'px'
      }
      // Down Bordered image 1
    if( parseInt(document.getElementById('myImg01').style.top) > window.innerHeight - document.getElementById('myImg01').height ){
-      document.getElementById('myImg01').style.top = '650px'
+      document.getElementById('myImg01').style.top = window.innerHeight - 100
      }
     
     // Bordered Up image 1
