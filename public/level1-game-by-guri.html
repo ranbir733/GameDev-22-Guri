@@ -2,11 +2,11 @@
    myTimer01 = setInterval(function(){
        document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + myHorizontalSpeed + 'px'
        //myCheckHit()     // checks for all collisions
-    }, 1)
+    }, 0.1)
       myTimer02 = setInterval(function(){
        document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + myVeritcalSpeed + 'px'
        myCheckHit()     // checks for all collisions
-    }, 1)
+    }, 0.1)
     
   }">
     
@@ -35,7 +35,7 @@
   
      }
   
-     if (myTimeM >= 2) {
+     if (myTimeM >= 1) {
   
         location = 't4a03-win-game-by-guri.html'
   
@@ -98,12 +98,12 @@
     
     
     
-<div style="color:rgb(252, 5, 239)">Win in 2 mins</div>
+<div style="color:rgb(252, 5, 239)">Win in 1 mins</div>
 <div id='demo' style="color:rgb(252, 5, 239)">...</div>
   
   
   </body>
-  <h4 style="color:rgb(252, 5, 239)">Version 0.0.59</h4>
+  <h4 style="color:rgb(252, 5, 239)">Version 0.0.60</h4>
      
   <br>
   
@@ -189,7 +189,7 @@
      let myInterval= 0
      let myTimer01
      let myTimer02
-     let myHorizontalSpeed = 1
+     let myHorizontalSpeed = 2
      let myVeritcalSpeed  = 1
   
      // global functions here
@@ -222,7 +222,7 @@
      }
     
     // far right bounce image 2
-    if( parseInt(document.getElementById('myImg02').style.left) < -1  ){
+    if( parseInt(document.getElementById('myImg02').style.left) < -2  ){
         myHorizontalSpeed = myHorizontalSpeed * -1
      }
      // far down bounce image 2
