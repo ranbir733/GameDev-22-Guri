@@ -112,79 +112,118 @@
    <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="image_and_sound/kai-pilger-Ef6iL87-vOA-unsplash.jpg"     
    
    
-   onkeydown="{
-      let myKey01 = event.key
-      //  let myKey01 = String.toLowerCase(event.key)
-      document.getElementById('myDiv01').innerHTML = myKey01
-      if (myKey01 == 'd') {
-        // either uncomment
-        // clearInterval(myInterval)
-        // myInterval = setInterval(function(){
-        //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
-        //    myCheckHit()
-        // } ,20)
-        // or do the following
-         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 17
-         myCheckHit()
-         myCheckHit3()
-         rotateImg1()
-      }
-      // put your other keydowns here.
-   let myKey02 = event.key
-      //  let myKey02 = String.toLowerCase(event.key)
-      document.getElementById('myDiv01').innerHTML = myKey02
-      if (myKey02 == 'w') {
-        // either uncomment
-        // clearInterval(myInterval)
-        // myInterval = setInterval(function(){
-        //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
-        //    myCheckHit()
-        // } ,20)
-        // or do the following
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 17
-         myCheckHit()
-         myCheckHit3()
-        rotateImg2()
+   onkeypress="{
+     let myKey01 = event.key
+     //  let myKey05 = String.toLowerCase(event.key)
+     document.getElementById('myDiv01').innerHTML = myKey01
+     if (myKey01 == 'd') {
+       // either uncomment
+        clearInterval(myInterval)
+        myInterval = setInterval(function(){
+           document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+           myCheckHit()
+           rotateImg1()
+        } ,5)
+      //  or do the following
+      //  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 17
+      //  myCheckHit()
+      //  rotateImg1()
+     }
+
+   
+     // put your other keydowns here.
+  let myKey02 = event.key
+    //   let myKey06 = String.toLowerCase(event.key)
+     document.getElementById('myDiv01').innerHTML = myKey02
+     if (myKey02 == 'w') {
+       // either uncomment
+        clearInterval(myInterval)
+        myInterval = setInterval(function(){
+           document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
+           myCheckHit()
+           rotateImg2()
+        } ,5)
+      //  or do the following
+      //  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 17
+      //  myCheckHit()
+      //    rotateImg2()
+  }
+   // put your other keydowns here.
+   
+   let myKey03 = event.key
+   //    let myKey07 = String.toLowerCase(event.key)
+     document.getElementById('myDiv01').innerHTML = myKey03
+     if (myKey01 == 's') {
+       // either uncomment
+        clearInterval(myInterval)
+        myInterval = setInterval(function(){
+           document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
+           myCheckHit()
+           rotateImg3()
+        } ,5)
+      //  or do the following
+      //  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 17
+      //  myCheckHit()
+      ///  rotateImg3()
+     }
+     // put your other keydowns here.
+   let myKey04 = event.key
+   //    let myKey08 = String.toLowerCase(event.key)
+     document.getElementById('myDiv01').innerHTML = myKey04
+     if (myKey01 == 'a') {
+       // either uncomment
+        clearInterval(myInterval)
+        myInterval = setInterval(function(){
+           document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+           myCheckHit()
+           rotateImg4()
+        } ,5)
+      //  or do the following
+      //  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 17
+      //  myCheckHit()
+      //  rotateImg4()
+     }
+     // put your other keydowns here.
+  }">
+  
+<body
+  onkeyup="{
+   let myKey05 = event.key
+
+   document.getElementById('myDiv01').innerHTML = myKey05
+   if (myKey05 == 'd') {
+      clearInterval(myInterval)
    }
-    // put your other keydowns here.
-    
-    let myKey03 = event.key
-      //  let myKey03 = String.toLowerCase(event.key)
-      document.getElementById('myDiv01').innerHTML = myKey03
-      if (myKey01 == 's') {
-        // either uncomment
-        // clearInterval(myInterval)
-        // myInterval = setInterval(function(){
-        //    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
-        //    myCheckHit()
-        // } ,20)
-        // or do the following
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 17
-         myCheckHit()
-         myCheckHit3()
-         rotateImg3()
-      }
-      // put your other keydowns here.
-    let myKey04 = event.key
-      //  let myKey04 = String.toLowerCase(event.key)
-      document.getElementById('myDiv01').innerHTML = myKey04
-      if (myKey01 == 'a') {
-        // either uncomment
-        // clearInterval(myInterval)
-        // myInterval = setInterval(function(){
-        //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
-        //    myCheckHit()
-        // } ,20)
-        // or do the following
-         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 17
-         myCheckHit()
-         myCheckHit3()
-         rotateImg4()
-      }
-      // put your other keydowns here.
-   }">
+
+}
    
-   
+   {
+   let myKey06 = event.key
+
+   document.getElementById('myDiv01').innerHTML = myKey06
+   if (myKey06 == 'w') {
+      clearInterval(myInterval)
+   }
+
+   }
+
+   let myKey07 = event.key
+
+document.getElementById('myDiv01').innerHTML = myKey07
+if (myKey07 == 's') {
+   clearInterval(myInterval)
+}
+
+
+let myKey08 = event.key
+
+document.getElementById('myDiv01').innerHTML = myKey08
+if (myKey08 == 'a') {
+   clearInterval(myInterval)
+
+
+}">
+ 
    <script>
    
       // global variables here
