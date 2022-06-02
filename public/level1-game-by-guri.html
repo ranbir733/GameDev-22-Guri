@@ -2,12 +2,12 @@
     myTimer01 = setInterval(function(){
         document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + myHorizontalSpeed + 'px'
         //myCheckHit()     // checks for all collisions
-     }, 0.1)
+     }, 0.2)
        myTimer02 = setInterval(function(){
         document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + myVeritcalSpeed + 'px'
         myCheckHit2()
         myCheckHit()     // checks for all collisions
-     }, 0.1)
+     }, 0.2)
      
    }">
      
@@ -232,8 +232,8 @@ if (myKey08 == 'a') {
       let myInterval= 0
       let myTimer01
       let myTimer02
-      let myHorizontalSpeed = 2
-      let myVeritcalSpeed  = 1
+      let myHorizontalSpeed = 3
+      let myVeritcalSpeed  = 2
    
       // global functions here
    function myHitOther(my1,my2){
