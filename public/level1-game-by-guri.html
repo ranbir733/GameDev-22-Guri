@@ -257,7 +257,7 @@ if (myKey08 == 'a') {
      let myInterval= 0
      let myTimer01
      let myTimer02
-     let myHorizontalSpeed = 2
+     let myHorizontalSpeed = 1
      let myVeritcalSpeed  = 1
   
      // global functions here
@@ -292,7 +292,7 @@ if (myKey08 == 'a') {
      }
     
     // far right bounce image 2
-    if( parseInt(document.getElementById('myImg02').style.left) < -2  ){
+    if( parseInt(document.getElementById('myImg02').style.left) < -1  ){
         myHorizontalSpeed = myHorizontalSpeed * -1
      }
      // far down bounce image 2
@@ -319,7 +319,7 @@ if (myKey08 == 'a') {
      }
      // Down Bordered image 1
    if( parseInt(document.getElementById('myImg01').style.top) > window.innerHeight - document.getElementById('myImg01').height ){
-      document.getElementById('myImg01').style.top = window.innerHeight - 104
+      document.getElementById('myImg01').style.top = window.innerHeight - 106
      }
     
     // Bordered Up image 1
