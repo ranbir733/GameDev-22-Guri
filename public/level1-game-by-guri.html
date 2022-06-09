@@ -257,7 +257,7 @@ if (myKey08 == 'a') {
      let myInterval= 0
      let myTimer01
      let myTimer02
-     let myHorizontalSpeed = 1
+     let myHorizontalSpeed = 2
      let myVeritcalSpeed  = 1
   
      // global functions here
@@ -285,18 +285,18 @@ if (myKey08 == 'a') {
   
    }
 
-   function myCheckHit2(){
+ function myCheckHit2(){
      // far left bounce image 2
-    if( parseInt(document.getElementById('myImg02').style.left) > window.innerWidth - document.getElementById('myImg02').width ){
+    if( parseInt(document.getElementById('myImg02').style.left) > window.innerWidth - 250 ){
         myHorizontalSpeed *= -1
      }
     
     // far right bounce image 2
-    if( parseInt(document.getElementById('myImg02').style.left) < -1  ){
+    if( parseInt(document.getElementById('myImg02').style.left) < -2  ){
         myHorizontalSpeed = myHorizontalSpeed * -1
      }
      // far down bounce image 2
-   if( parseInt(document.getElementById('myImg02').style.top) > window.innerHeight - document.getElementById('myImg02').height ){
+   if( parseInt(document.getElementById('myImg02').style.top) > window.innerHeight - 250 ){
         myVeritcalSpeed *= -1
      }
     
@@ -309,25 +309,24 @@ if (myKey08 == 'a') {
 
    function myCheckHit3(){
        // Bordered right image 1
-    if( parseInt(document.getElementById('myImg01').style.left) > window.innerWidth - document.getElementById('myImg01').width ){
-      document.getElementById('myImg01').style.left = window.innerWidth - 106
+    if( parseInt(document.getElementById('myImg01').style.left) > window.innerWidth - 100 ){
+      document.getElementById('myImg01').style.left = window.innerWidth - 101
      }
     
     // Bordered Left image 1
     if( parseInt(document.getElementById('myImg01').style.left) < -1  ){
-      document.getElementById('myImg01').style.left = '5px'
+      document.getElementById('myImg01').style.left = '1px'
      }
      // Down Bordered image 1
-   if( parseInt(document.getElementById('myImg01').style.top) > window.innerHeight - document.getElementById('myImg01').height ){
-      document.getElementById('myImg01').style.top = window.innerHeight - 106
+   if( parseInt(document.getElementById('myImg01').style.top) > window.innerHeight - 100 ){
+      document.getElementById('myImg01').style.top = window.innerHeight - 101
      }
     
     // Bordered Up image 1
     if( parseInt(document.getElementById('myImg01').style.top) < -1  ){
-      document.getElementById('myImg01').style.top = '5px'
+      document.getElementById('myImg01').style.top = '1px'
      }
-     // more if statements here like the above
-  
+      
      }  // end of myCheckHit()
   
   
